@@ -1,0 +1,65 @@
+\documentclass[]{article}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{geometry}
+%\usepackage{graphicx}
+%\usepackage[sort]{natbib} % sort is for alphabetic sorting
+%\geometry{legalpaper, portrait, margin=1.2in}
+\bibliographystyle{apalike}
+
+\begin{document}
+\title{References notes}
+\author{Erwan Lecarpentier}
+\date{The 30th of January 2017}
+
+%\maketitle
+
+\section*{Notes}
+
+\noindent \cite{lopes2012exploration} drive exploration of RL-algorithm wrt progress; use empirical estimate of the "Learning Progress"
+
+\subsection*{Time Dependent MDPs}
+\noindent \cite{sutton1999between} SMDP\\
+\noindent \cite{boyan2000exact} TiMDP\\
+\noindent \cite{younes2004solving} GSMDP\\
+\noindent \cite{rachelson2008extending} XMDP\\
+\noindent \cite{rachelson2009adapting} TiMDP on UAV\\
+\noindent \cite{bastostime} TiMDP rwd depending on time
+
+\subsection*{UAV}
+\noindent \cite{baker2016factored} Factored MCTS for multi-agent exploration; rescue problem (explore the environment and find the people); toy-domain\\\\
+\noindent \cite{de2016guidance} Tracking algorithm for smooth dynamic (time varying) trajectories; output = bank angle; real-world system experiments\\\\
+\noindent \cite{reddy2016learning} Learning To Soar; SARSA Learning within a cube including a turbulent windfield with thermal phenomenon\\\\
+\noindent \cite{fechner2015dynamic} Dynamic model of a pumping kite power system\\\\
+\noindent \cite{lawrance2011autonomous} TODO - Autonomous soaring flight for unmanned aerial vehicles; PhD Thesis; use GP to model belief over windfield
+
+\subsection*{MCTS/Bandit problem}
+\noindent \cite{kocsis2006bandit} UCT\\\\
+\noindent \cite{browne2012survey} General survey of MCTS\\\\
+\noindent \cite{couetoux2011continuous} PW and DPW for continuous MCTS; use finite discrete set of actions and $s'$\\\\
+\noindent \cite{bubeck2009online} HOO (Hierarchical Optimistic Optimization): build trees of covering $(P_{h,i})_{1 <= i <= 2^h}$; each $h$ corresponds to a level of dividing $A$ the set of actions giving a binary tree; UCT-like approach to explore the binary tree composed with subsets of $A$; almost a dichotomy approach\\\\
+\noindent \cite{mansley2011sample} HOOT (HOO for Trees)\\\\
+\noindent \cite{weinstein2012bandit} HOLOP (Hierarchical Open-Loop Optimistic Planning) application of HOO to MDPs for sequential planning\\\\
+\noindent \cite{auger2013continuous} PUCT (Polynomial UCT); no knowledge of $A$ (black-box); tree of decision $z:(s)$ and random $w:(s,a)$ nodes; use DPW + PUCT i.e. polynomial exploration with the following UCT score:
+\begin{equation*}
+	a_{next} = argmax_a \left\{ \widehat{V}(z,a) + \sqrt{\frac{n(z)^{e(depth)}}{n(z,a)}} \right\}
+\end{equation*}\\\\
+\noindent \cite{silver2008sample} permanent and transient memory; SARSA + dyna architecture\\\\
+\noindent \cite{deleva2015td} TD learning within MCTS (PhD thesis)\\\\
+\noindent \cite{gelly2011monte} MCTS + RAVE (Rapid Action Value Estimation); 2 features: RAVE + heuristic function used to initialize value of nodes; RAVE = bias of the value estimate of node $z$ based on the subtree $\tau (z)$; the bias is the all-move-as-first Q value: mean of every same move's Q value played in the subtree; heuristic function = TD learning with self-play
+
+\subsection*{Actor-Critic}
+\noindent \cite{lagoudakis2003least} LSPI\\
+\noindent \cite{xu2007kernel} Kernelized LSPI\\
+\noindent \cite{busoniu2010reinforcement} include online LSPI
+
+\section*{Caption}
+\begin{itemize}
+\item PW: Progressive Widening
+\item DPW: Double Progressive Widening
+\end{itemize}
+
+\bibliography{mybib}
+
+\end{document}

@@ -1,0 +1,29 @@
+\begin{thebibliography}{}
+
+\bibitem[Boslough, 2002]{boslough2002autonomous}
+Boslough, M.~B. (2002).
+\newblock Autonomous dynamic soaring platform for distributed mobile sensor
+  arrays.
+\newblock {\em Sandia National Laboratories, Sandia National Laboratories,
+  Tech. Rep. SAND2002-1896}.
+
+\bibitem[Coiro et~al., 2008]{coiro2008flight}
+Coiro, D., Nicolosi, F., De~Marco, A., and Familio, R. (2008).
+\newblock Flight test on ultralight motorglider, aerodynamic model estimation
+  and use in a 6dof flight simulator.
+\newblock {\em Aerotecnica Missili e Spazio}, 87(1):3--13.
+
+\bibitem[de~Marina et~al., 2016]{de2016guidance}
+de~Marina, H.~G., Kapitanyuk, Y.~A., Bronz, M., Hattenberger, G., and Cao, M.
+  (2016).
+\newblock Guidance algorithm for smooth trajectory tracking of a fixed wing uav
+  flying in wind flows.
+\newblock {\em arXiv preprint arXiv:1610.02797}.
+
+\bibitem[Gimenes et~al., 2008]{gimenes2008using}
+Gimenes, R., Silva, D.~C., Reis, L.~P., and Oliveira, E. (2008).
+\newblock Using flight simulation environments with agent-controlled uavs.
+\newblock In {\em Autonomous Robot Systems and Competitions: Proceedings of the
+  8th Conference}.
+
+\end{thebibliography}

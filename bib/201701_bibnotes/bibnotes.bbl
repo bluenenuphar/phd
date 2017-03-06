@@ -1,0 +1,155 @@
+\begin{thebibliography}{}
+
+\bibitem[Auger et~al., 2013]{auger2013continuous}
+Auger, D., Couetoux, A., and Teytaud, O. (2013).
+\newblock Continuous upper confidence trees with polynomial
+  exploration--consistency.
+\newblock In {\em Joint European Conference on Machine Learning and Knowledge
+  Discovery in Databases}, pages 194--209. Springer.
+
+\bibitem[Baker et~al., 2016]{baker2016factored}
+Baker, C., Ramchurn, G., Teacy, L., and Jennings, N. (2016).
+\newblock Factored monte-carlo tree search for coordinating uavs in disaster
+  response.
+\newblock ICAPS.
+
+\bibitem[Bastos et~al., ]{bastostime}
+Bastos, G.~S., Ramos, F.~T., de~Souza, L.~E., and Ribeiro, C.~H.
+\newblock Time-dependent utility decision making using the timdp model.
+
+\bibitem[Boyan and Littman, 2000]{boyan2000exact}
+Boyan, J.~A. and Littman, M.~L. (2000).
+\newblock Exact solutions to time-dependent mdps.
+\newblock In {\em NIPS}, pages 1026--1032.
+
+\bibitem[Browne et~al., 2012]{browne2012survey}
+Browne, C.~B., Powley, E., Whitehouse, D., Lucas, S.~M., Cowling, P.~I.,
+  Rohlfshagen, P., Tavener, S., Perez, D., Samothrakis, S., and Colton, S.
+  (2012).
+\newblock A survey of monte carlo tree search methods.
+\newblock {\em IEEE Transactions on Computational Intelligence and AI in
+  Games}, 4(1):1--43.
+
+\bibitem[Bubeck et~al., 2009]{bubeck2009online}
+Bubeck, S., Stoltz, G., Szepesv{\'a}ri, C., and Munos, R. (2009).
+\newblock Online optimization in x-armed bandits.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  201--208.
+
+\bibitem[Busoniu et~al., 2010]{busoniu2010reinforcement}
+Busoniu, L., Babuska, R., De~Schutter, B., and Ernst, D. (2010).
+\newblock {\em Reinforcement learning and dynamic programming using function
+  approximators}, volume~39.
+\newblock CRC press.
+
+\bibitem[Cou{\"e}toux et~al., 2011]{couetoux2011continuous}
+Cou{\"e}toux, A., Hoock, J.-B., Sokolovska, N., Teytaud, O., and Bonnard, N.
+  (2011).
+\newblock Continuous upper confidence trees.
+\newblock In {\em International Conference on Learning and Intelligent
+  Optimization}, pages 433--445. Springer.
+
+\bibitem[de~Marina et~al., 2016]{de2016guidance}
+de~Marina, H.~G., Kapitanyuk, Y.~A., Bronz, M., Hattenberger, G., and Cao, M.
+  (2016).
+\newblock Guidance algorithm for smooth trajectory tracking of a fixed wing uav
+  flying in wind flows.
+\newblock {\em arXiv preprint arXiv:1610.02797}.
+
+\bibitem[Deleva, 2015]{deleva2015td}
+Deleva, A. (2015).
+\newblock {\em TD Learning in Monte Carlo Tree Search: Masters Thesis}.
+\newblock PhD thesis, A. Deleva.
+
+\bibitem[Fechner et~al., 2015]{fechner2015dynamic}
+Fechner, U., van~der Vlugt, R., Schreuder, E., and Schmehl, R. (2015).
+\newblock Dynamic model of a pumping kite power system.
+\newblock {\em Renewable Energy}, 83:705--716.
+
+\bibitem[Gelly and Silver, 2011]{gelly2011monte}
+Gelly, S. and Silver, D. (2011).
+\newblock Monte-carlo tree search and rapid action value estimation in computer
+  go.
+\newblock {\em Artificial Intelligence}, 175(11):1856--1875.
+
+\bibitem[Kocsis and Szepesv{\'a}ri, 2006]{kocsis2006bandit}
+Kocsis, L. and Szepesv{\'a}ri, C. (2006).
+\newblock Bandit based monte-carlo planning.
+\newblock In {\em European conference on machine learning}, pages 282--293.
+  Springer.
+
+\bibitem[Lagoudakis and Parr, 2003]{lagoudakis2003least}
+Lagoudakis, M.~G. and Parr, R. (2003).
+\newblock Least-squares policy iteration.
+\newblock {\em Journal of Machine Learning Research}, 4(Dec):1107--1149.
+
+\bibitem[Lawrance, 2011]{lawrance2011autonomous}
+Lawrance, N.~R. (2011).
+\newblock {\em Autonomous soaring flight for unmanned aerial vehicles}.
+\newblock University of Sydney.
+
+\bibitem[Lopes et~al., 2012]{lopes2012exploration}
+Lopes, M., Lang, T., Toussaint, M., and Oudeyer, P.-Y. (2012).
+\newblock Exploration in model-based reinforcement learning by empirically
+  estimating learning progress.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  206--214.
+
+\bibitem[Mansley et~al., 2011]{mansley2011sample}
+Mansley, C.~R., Weinstein, A., and Littman, M.~L. (2011).
+\newblock Sample-based planning for continuous action markov decision
+  processes.
+\newblock In {\em ICAPS}.
+
+\bibitem[Rachelson et~al., 2009]{rachelson2009adapting}
+Rachelson, E., Fabiani, P., and Garcia, F. (2009).
+\newblock Adapting an mdp planner to time-dependency: case study on a uav
+  coordination problem.
+\newblock In {\em 4th Workshop on Planning and Plan Execution for Real-World
+  Systems: Principles and Practices for Planning in Execution, Thessaloniki,
+  Greece}.
+
+\bibitem[Rachelson et~al., 2008]{rachelson2008extending}
+Rachelson, E., Garcia, F., and Fabiani, P. (2008).
+\newblock Extending the bellman equation for mdp to continuous actions and
+  continuous time in the discounted case.
+\newblock In {\em 10th Int. Symp. on AI and Math}.
+
+\bibitem[Reddy et~al., 2016]{reddy2016learning}
+Reddy, G., Celani, A., Sejnowski, T.~J., and Vergassola, M. (2016).
+\newblock Learning to soar in turbulent environments.
+\newblock {\em Proceedings of the National Academy of Sciences}, page
+  201606075.
+
+\bibitem[Silver et~al., 2008]{silver2008sample}
+Silver, D., Sutton, R.~S., and M{\"u}ller, M. (2008).
+\newblock Sample-based learning and search with permanent and transient
+  memories.
+\newblock In {\em Proceedings of the 25th international conference on Machine
+  learning}, pages 968--975. ACM.
+
+\bibitem[Sutton et~al., 1999]{sutton1999between}
+Sutton, R.~S., Precup, D., and Singh, S. (1999).
+\newblock Between mdps and semi-mdps: A framework for temporal abstraction in
+  reinforcement learning.
+\newblock {\em Artificial intelligence}, 112(1-2):181--211.
+
+\bibitem[Weinstein and Littman, 2012]{weinstein2012bandit}
+Weinstein, A. and Littman, M.~L. (2012).
+\newblock Bandit-based planning and learning in continuous-action markov
+  decision processes.
+\newblock In {\em ICAPS}.
+
+\bibitem[Xu et~al., 2007]{xu2007kernel}
+Xu, X., Hu, D., and Lu, X. (2007).
+\newblock Kernel-based least squares policy iteration for reinforcement
+  learning.
+\newblock {\em IEEE Transactions on Neural Networks}, 18(4):973--992.
+
+\bibitem[Younes and Simmons, 2004]{younes2004solving}
+Younes, H.~L. and Simmons, R.~G. (2004).
+\newblock Solving generalized semi-markov decision processes using continuous
+  phase-type distributions.
+\newblock In {\em AAAI}, volume~4, page 742.
+
+\end{thebibliography}

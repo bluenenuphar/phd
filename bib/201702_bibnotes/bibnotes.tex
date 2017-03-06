@@ -1,0 +1,56 @@
+\documentclass[]{article}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\bibliographystyle{apalike}
+
+\begin{document}
+\title{References notes}
+\author{Erwan}
+
+\maketitle
+
+\section*{Guidance and Control}
+\begin{itemize}
+	\item \cite{de2016guidance} (SkyScanner)
+	\begin{itemize}
+		\item Smooth trajectory tracking;
+		\item Hypothesis: \textbf{constant horizontal air speed; 2D trajectories};
+		\item Guidance algorithm:
+		\begin{itemize}
+			\item Input: implicit function of the desired trajectory
+			\item 1: compute guidance vector field
+			\item 2: steer the course heading toward the guidance vector field
+			\item Output: bank angle
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\section*{Flight Simulator}
+\begin{itemize}
+	\item \cite{boslough2002autonomous}
+	\begin{itemize}
+		\item Dynamic Soaring;
+		\item 6DOF model (modified SGS 1-36 sailplane) based on real data collected in a wind tunnel;
+		\item use special version of FlightGear allowing flight in arbitrary wind
+		fields to be modeled (basic models of thermals \& slope lift + good model for laminar shear);
+		\item Genetic Programming to generate control algorithms
+	\end{itemize}
+
+	\item \cite{coiro2008flight}
+	\begin{itemize}
+		\item generate a model based on real data via system identification techniques;
+		\item new experimental system for data acquisition with instant communication with a ground station;
+		\item use the model with a 6DOF flight simulator (JSBSim)
+	\end{itemize}
+
+	\item \cite{gimenes2008using}
+	\begin{itemize}
+		\item multi-agent automatic flight control including realistic simulator with fault injection for prediction of the other agents behavior;
+		\item survey of simulation environments (Microsoft Flight Simulator, X-Plane, FlightGear, Piccolo etc.)
+	\end{itemize}
+\end{itemize}
+
+\bibliography{mybib}
+
+\end{document}
