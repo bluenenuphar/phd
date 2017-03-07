@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: soaring.aux
+The style file: ifacconf.bst
+Database file #1: mybiblio.bib
+You've used 20 entries,
+            2921 wiz_defined-function locations,
+            689 strings with 7574 characters,
+and the built_in function-call counts, 10438 in all, are:
+= -- 833
+> -- 396
+< -- 16
++ -- 149
+- -- 123
+* -- 658
+:= -- 1655
+add.period$ -- 60
+call.type$ -- 20
+change.case$ -- 156
+chr.to.int$ -- 20
+cite$ -- 20
+duplicate$ -- 832
+empty$ -- 828
+format.name$ -- 191
+if$ -- 2064
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 169
+newline$ -- 109
+num.names$ -- 80
+pop$ -- 440
+preamble$ -- 1
+purify$ -- 121
+quote$ -- 0
+skip$ -- 326
+stack$ -- 0
+substring$ -- 308
+swap$ -- 365
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 171
+warning$ -- 0
+while$ -- 67
+width$ -- 0
+write$ -- 258

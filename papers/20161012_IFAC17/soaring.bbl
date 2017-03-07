@@ -1,0 +1,122 @@
+\begin{thebibliography}{20}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Allen(2005)}]{allen05}
+Allen, M.J. (2005).
+\newblock Autonmous soaring for improved endurance of a small uninhabited air
+  vehicle.
+\newblock Technical report, NASA Dryden Research Center.
+
+\bibitem[{Allen(2006)}]{allen_thermal}
+Allen, M.J. (2006).
+\newblock Updraft model for development of autonomous soaring uninhabited air
+  vehicles.
+\newblock Technical report, NASA Dryden Flight Research Center.
+
+\bibitem[{Allen and Lin(2007)}]{allen07}
+Allen, M.J. and Lin, V. (2007).
+\newblock Guidance and control of an autonomous soaring uav.
+\newblock Technical report, NASA Dryden Flight Research Center.
+
+\bibitem[{Beeler et~al.(2003)Beeler, Moerder, and Cox}]{dynamic}
+Beeler, S., Moerder, D., and Cox, D. (2003).
+\newblock A flight dynamics model for a small glider in ambient winds.
+\newblock Technical report, NASA.
+
+\bibitem[{Bencatel et~al.(2013)Bencatel, de~Sousa, and Girard}]{bencatel13}
+Bencatel, R., de~Sousa, J.T., and Girard, A. (2013).
+\newblock Atmospheric flow field models applicable for aircraft endurance
+  extension.
+\newblock \emph{Prog. in Aerospace Sciences}, 61.
+
+\bibitem[{Chakrabarty and Langelaan(2010)}]{chakrabarty}
+Chakrabarty, A. and Langelaan, J. (2010).
+\newblock Flight path planning for uav atmospheric energy harvesting using
+  heuristic search.
+\newblock In \emph{AIAA Guidance, Navigation, and Control Conference}.
+
+\bibitem[{Chen and McMasters(1981)}]{chen1981}
+Chen, M. and McMasters, J. (1981).
+\newblock From paleoaeronautics to altostratus - a technical history of
+  soaring.
+\newblock In \emph{AIAA Aircraft Systems and Technology Conference}.
+
+\bibitem[{Chen and Clarke(2011)}]{chen11}
+Chen, W. and Clarke, J.H.A. (2011).
+\newblock Trajectory generation for autonomous soaring {UAS}.
+\newblock In \emph{17th International Conference on Automation and Computing}.
+
+\bibitem[{Hachiya and Sugiyama(2010)}]{hachiya10}
+Hachiya, H. and Sugiyama, M. (2010).
+\newblock Feature selection for reinforcement learning: Evaluating implicit
+  state-reward dependency via conditional mutual information.
+\newblock In \emph{European Conference on Machine Learning and Knowledge
+  Discovery in Databases}, 474--489.
+
+\bibitem[{Kahveci and Mirmirani(2008)}]{kahveci}
+Kahveci, N. and Mirmirani, M. (2008).
+\newblock Adaptive {LQ} control with anti-windup augmentation to optimize {UAV}
+  performance in autonomous soaring application.
+\newblock In \emph{IEEE Transactions on Control System Technology}.
+
+\bibitem[{Lawrance(2011)}]{lawrance_phd}
+Lawrance, N. (2011).
+\newblock \emph{Autonomous Soaring Flight for Unmanned Aerial Vehicle}.
+\newblock Ph.D. thesis, The University Of Sydney.
+
+\bibitem[{Lawrance and Sukkarieh(2011)}]{lawrance11}
+Lawrance, N. and Sukkarieh, S. (2011).
+\newblock Path planning for autonomous soaring flight in dynamic wind.
+\newblock In \emph{IEEE International Conference on Robotics and Automation}.
+
+\bibitem[{Nguyen et~al.(2013)Nguyen, Li, Silander, and Leong}]{nguyen13}
+Nguyen, T., Li, Z., Silander, T., and Leong, T.Y. (2013).
+\newblock Online feature selection for model-based reinforcement learning.
+\newblock In \emph{Int. Conf. on Machine Learning}.
+
+\bibitem[{Parr et~al.(2008)Parr, Li, Taylor, Painter-Wakefield, and
+  Littman}]{parr08}
+Parr, R., Li, L., Taylor, G., Painter-Wakefield, C., and Littman, M.L. (2008).
+\newblock An analysis of linear models, linear value-function approximation,
+  and feature selection for reinforcement learning.
+\newblock In \emph{International Conference on Machine Learning}.
+
+\bibitem[{Puterman(2005)}]{puterman}
+Puterman, M.L. (2005).
+\newblock \emph{Markov Decision Processes: Discrete Stochastic Dynamic
+  Programming}.
+\newblock John Wiley \& Sons, Inc.
+
+\bibitem[{Reichmann(1993)}]{reichmann}
+Reichmann, H. (1993).
+\newblock \emph{Cross-Country Soaring}.
+\newblock Soaring Society of America.
+
+\bibitem[{Robbins and Monro(1951)}]{robbins1951}
+Robbins, H. and Monro, S. (1951).
+\newblock A stochastic approximation method.
+\newblock \emph{Ann. Math. Statist.}, 22(3), 400--407.
+
+\bibitem[{Sutton and Barto(1998)}]{sutton_book}
+Sutton, R.S. and Barto, A.G. (1998).
+\newblock \emph{Reinforcement Learning: An Introduction}.
+\newblock MIT Press.
+
+\bibitem[{Watkins and Dayan(1992)}]{watkins92qlearning}
+Watkins, C.J.C. and Dayan, P. (1992).
+\newblock {Q}-learning.
+\newblock \emph{Machine Learning}, 8, 279--292.
+
+\bibitem[{Wharington(1998)}]{wharington_phd}
+Wharington, J. (1998).
+\newblock \emph{Autonmous Control of Soaring Aircraft by Reinforcement
+  Learning}.
+\newblock Ph.D. thesis, Royal Melbourne Institute of Technology.
+
+\end{thebibliography}
