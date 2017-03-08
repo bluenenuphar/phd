@@ -1,0 +1,55 @@
+\documentclass[a4paper]{article}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{geometry}
+%\usepackage[round, sort]{natbib} % sort is for alphabetic sorting
+\geometry{legalpaper, portrait, margin=1.2in}
+\bibliographystyle{plain}
+
+\begin{document}
+\title{Research Proposal for PhD Thesis}
+\author{Erwan Lecarpentier}
+\date{The 11th of January 2017}
+
+\maketitle
+
+% Example:
+% http://www.meaning.ca/archives/archive/art_how_to_write_P_Wong.htm
+
+\section{Abstract}
+How to learn optimal controllers for an agent in dynamic environment? Including the temporal dependence within Reinforcement Learning (RL) problems is a challenging concern compared to static Markov Decision Processes (MDPs). This PhD Thesis aims at designing Learning algorithms for the generation of optimal controllers in this context. Various RL architectures are considered among model-free and model-based approaches, describing the advantage of model-making and its feasibility in practical context.
+We are motivated by applications on Unmanned Aerial Vehicles (UAVs) since flying environments are rarely stationary, e.g. unsteady wind-field, thermals magnitude varying over time, obstacles.
+Furthermore, we investigate the possibility to tackle multi-objectives RL problems that can correspond to the fulfillment of a main mission and secondary objectives e.g. for a glider drone that would try to reach a goal while maximizing its autonomy thanks to convective air currents.\\
+
+\noindent \textbf{Keywords:} Reinforcement Learning; Nonstationary Environment; Monte Carlo Tree Search; UAV Control.
+
+\section{Development}
+Autonomous UAVs provide a great tool for a wide range of real-world applications and therefore the problem of controlling them has been extensively tackled during the past decades.
+Among the different paradigms used to perform control of robotics systems, we focus on the design of policies using RL techniques. We put ourself in the specific context of time-varying environment that make the task of solving MDPs more complex. As an illustration, one can take the example of a glider drone aiming at maximizing its altitude by exploiting the vertical air currents naturally found in thermals. The latter have a time varying magnitude and position, making the solution of this class of decision problem non-static.
+
+\subsection{Time Dependent MDPs}
+Several formalisms have been built to illustrate the time-dependency of MDPs such as TiMDP (Time dependent MDPs) by Boyan and Littman \cite{boyan_littman_2000} or XMDP by  Rachelson et al. \cite{rachelson_et_al_2008} that add the observation of the time in the description of the state vector; SMDP (Semi-MDP) by Sutton et al. \cite{sutton_et_al_1999} that introduce temporally extended actions; GSMDP (Generalized Semi-MDP) by Younes and Simmons \cite{younes_simmons_2004} that include concurrency between actions in the SMDP framework.
+\\
+
+\noindent The previous formalisms integrating the time in the description of MDPs add a level of complexity in the solving problem. Such a consideration is not necessary and we demonstrate in \cite{lecarpentier_et_al_2016} that a simple Q-learning algorithm \cite{watkins_1989} can efficiently improve the flight autonomy of a glider drone. The alternative to time consideration used in this paper was to tune the parameters of the algorithm in such a way that it is constantly learning the Q value function. Thus as time goes by the algorithm never converges which is relevant given that the environment is dynamic. However this method had its weaknesses such as the lack of long-term forecast and the practical application of locally optimal behaviors.
+\\
+
+\noindent Classical RL algorithms often make use of Value functions or approximated Value function estimations to solve MDPs. This approach is generally sensitive to complexity such as large state-action spaces or time dependency which is our framework. An alternative to simplify the problem is to build Monte Carlo Tree Search (MCTS) that directly provide a locally valid estimate of the reward associated to a state action pair. This approach is extensively used in the field of game theory because of its relatively low computational cost for complex problems and its reliability. Browne et al. \cite{browne2012survey} provide a general survey of the use of MCTS in the literature. They emphasis on the fact that future developments of MCTS should be brought by domain specific knowledge and adaptations.
+
+\subsection{Discussion}
+
+As the starting point for the PhD thesis, we focus on the general problem of finding an optimal policy in an uncertain dynamic environment. Silver and Veness proposed in \cite{silver2010monte} to make use of a Monte Carlo Planner called POMCP taking into account uncertainty in the environment. They tested their algorithm in benchmark problems such as Partially Observable PacMan and Battleship and demonstrated its efficiency. The key components of this approach is the use of a belief over the state space updated via Monte Carlo method and the use of MCTS from the current belief state.
+
+\section{Results}
+We plan to illustrate our results with various simulations performed in a simulator coded in c++. The development of the latter is seen on the long term with a complete modularity allowing to independently select the aircraft (glider, quad-copter, etc.), environment structure (relief, wind-field, etc.), simulation method (Euler, Runge-Kutta, etc.) and pilot (Q-learning, planning methods, etc.).
+\\
+
+\noindent Potentially, we could also perform trials on real-world systems if time allows us to do so including glider drones and quad-copters aircrafts.
+
+\cite{keller2013trial}
+\cite{keller2012prost}
+
+\bibliography{mybib}
+
+\end{document}
