@@ -1,4 +1,0 @@
-The reviewers indicate the theoretical and experimental
-contributions of the paper are somewhat marginal. The paper
-may eventually be accepted, with the requirement that the
-authors implement the comments of the referees.

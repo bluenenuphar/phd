@@ -1,0 +1,359 @@
+% Exemple de fichier fonctionnnant avec la classe pf2003.cls
+% 13.05.2003
+\documentclass{jfpda}
+
+\newcommand{\verbfichex}{jfpda.\xspace}
+\newcommand{\verbfichclass}{jfpda.cls\xspace}
+\newcommand{\verbfichbst}{jfpda.bst\xspace}
+
+% Mes Paquetages
+
+\usepackage[pdftex]{pstricks}
+\usepackage{verbatim}
+
+% Paquetages importés par la classe
+% \RequirePackage{vmargin}
+% \RequirePackage{theorem}
+% \RequirePackage{times}
+% \RequirePackage{xspace}
+% \RequirePackage{graphicx}
+
+% Mettre ou selon la façon dont on compile le fichier
+
+% Pour la biblio, très utilisé maintenant
+\usepackage{natbib}
+
+% conserver la ou les bonnes lignes en fonction des paramêtres de
+% l'installation 
+%\usepackage{french}
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Mes Nouvelles commandes
+
+% Mes Nouveaux environnement
+
+\newtheorem{algorithm}{Algorithme}
+\newtheorem{definition}{Définition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% fournir un titre court si le titre fait plus de 40 caractères
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\shorttitle{Épistémologie de l'IA}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% donner le titre de l'ouvrage selon la conférence IC, CAp, JFPDA ou RJCIA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\shortouvrage{CAp 2007}
+%\shortouvrage{IC 2007}
+%\shortouvrage{JFPDA 2007}
+%\shortouvrage{RJCIA 2007}
+\shortouvrage{JFPDA 2016}
+
+% Titre, auteur, pas de date
+
+\title{Style de document à utiliser avec \LaTeX pour les articles de
+  la conférence JFPDA%\thanks{Ce travail bénéficie du contrat du siècle.}
+}
+
+\author{Jean Charlet\inst{1,}\inst{3}, Fabien Torre\inst{2,}\inst{3}}
+
+\institute{
+INSERM UMR\_S 872, Eq. 20  \\
+15, rue de l'École de Médecine, 75006 Paris
+\texttt{Jean.Charlet@spim.jussieu.fr} et
+\texttt{http://estime.spim.jussieu.fr/$\sim$jc}
+\and
+Équipe Inférence et Apprentissage,
+Laboratoire de Recherche en Informatique, \\
+Bâtiment 490, Université Paris-Sud, 91405 - Orsay Cedex \\
+\texttt{fabien@lri.fr} et \texttt{http://www.lri.fr/$\sim$fabien}
+\and
+La confrérie des \emph{LaTeXeurs}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+  Quelques précisions à propos de la classe \verbfichclass. Merci aux
+  auteurs de respecter le style et les commandes donnés afin que les actes de
+  la conférences aient une présentation uniforme. Pour commencer, donner le
+  résumé via l'environnement \verb+resume+ et les mots-clés grâce à la
+  commande \verb+\motscles+ placée dans l'environnement \verb+resume+.
+  
+  La suite du résumé, la suite du résumé, la suite du résumé, la suite du
+  résumé, la suite du résumé, la suite du résumé, la suite du résumé, la suite
+  du résumé, la suite du résumé.
+
+  \motscles{Ingénierie des connaissances, Ingénierie des connaissances,
+  Ingénierie des connaissances.}
+\end{abstract}
+
+%
+% Introduction
+%
+
+\section{Introduction}
+\begin{sloppypar}
+  L'article commence de façon traditionnelle par la commande
+  \verb+\begin{document}+ et se termine par \verb+\end{document}+. Le
+  \verb+\maketitle+ est pris en charge par la classe pour construire la forme
+  des informations de titre demandées. Un résumé (obligatoire) doit êre
+  introduit par les commandes \verb+\begin{resume}+ et \verb+\end{resume}+.
+  Des mots-clés (obligatoires) sont fournis grâce à la commande
+  \verb+\motscles+ placée dans l'environnement \verb+resume+.
+  
+  Les en-têtes sont gérées par la classe ; il n'y a pas de pied de page.  Si
+  le titre fait plus de 50 caractères, merci de fournir un titre plus court
+  pour l'entête des pages grâce à la commande \verb+\shorttitle{}+.
+  
+  Si vous avez des problèmes de mots dépassant trop fortement des dimensions
+  autorisées, utilisez \verb+\begin{sloppypar}+ et \verb+\end{sloppypar}+ pour
+  encadrer les paragraphes incriminés comme c'est fait ici.
+  
+  Le mode français utilisé ici est fourni par le \emph{package}  \og babel \fg. Si vous préférez utiliser \og french \fg
+  de Bernard Gaule en raison du
+  paramétrage de votre installation, remplacez, au début du fichier
+  \verbfichex (ce fichier) la ligne \verb+\usepackage[french]{babel}+  par la ligne
+  \verb+\usepackage{french}+en inversant les caractères de
+  commentaires;
+
+\end{sloppypar}
+\section{À propos des institutions}
+
+L'utilisation de la commande \verb+\inst{}+ dans \verb+\author{}+, plus
+\verb+\and+ dans la nouvelle commande \verb+\institute{}+ permet de gérer les
+multiples auteurs ou institutions comme dans ce fichier d'exemple. Les
+instituts se numérotent automatiquement au sein de la commande
+\verb+\institute{}+ grâce à la commande \verb+\and+ et se voient attribuer
+successivement les chiffres 1, 2, 3, etc. Si un auteur dépend de plusieurs
+instituts, lui accoler les \verb+\inst{}+ adéquats, autant que nécessaire,
+comme dans ce fichier, en mettant une virgule dans l'argument du
+\verb+\inst{}+ qui n'est pas le dernier, comme toujours dans ce fichier. Si le
+ou les auteurs dépendent d'un seul institut, mettre cet institut dans la
+commande \verb+\institute{}+ en omettant les \verb+\inst{}+ et \verb+\and+ et
+tout ira bien.
+
+Merci de donner un courriel. L'adresse http est évidemment facultative.
+%
+% Les figures
+%
+\section{Divers}
+
+\subsection{À propos des figures}
+
+Les figures ne doivent pas dépasser la largeur du texte. Elles seront centrées
+par rapport à celui-ci. La légende est automatiquement formée de la bonne façon
+avec la francisation.
+
+\subsection{Notes de bas de page}
+
+Prises\footnote{Ceci est la première note de bas de page} en charge par le
+style\footnote{Ceci est la deuxième note de bas de page}, elles apparaissent
+en bas des pages et sont numérotées en chiffres arabes.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=.87\textwidth]{anglais.jpg}
+\caption{On aurait pu utiliser une police bizarre comme cela mais ça n'aurait pas été très lisible.}
+\label{fig:toto}
+\end{center}
+\end{figure}
+
+\subsubsection{Un titre de niveau 3}
+
+Pour voir.
+
+\paragraph{Un titre de niveau 4}
+
+Le paragraphe habituel de \LaTeX ; toujours pour voir. 
+
+\section{Test niveau 1}
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+\subsection{Test niveau 2}
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+\subsubsection{Test niveau 3}
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+\paragraph{Test niveau 4}
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla et bla et bla
+et bla et bla et bla et bla et bla et bla et bla et bla.
+
+%
+% citations
+%
+\section{Citation}
+
+La classe \verbfichclass \citep{Charlet:JAC94} sélectionne automatiquement
+le fichier \verbfichbst qui \citep{Carvalho:IC99} est une copie
+francisée \citep{Brunie:IC97} du fichier standard apalike.bst disponible dans
+les fichiers de formatage de bibliographie \LaTeX\ 
+\citep{Bourigault:IC99,ElKassar:IC97}. Les citations se
+font de façon normale pour \og \LaTeX\emph{user} \fg avec une virgule pour
+séparer les citation groupées comme dans\\
+\verb+\citep{Bourigault:IC99,ElKassar:IC97}+.
+
+%
+% Conclusion
+%
+\section{Conclusion}
+
+Et voilà la conclusion de ce long pensum. Bravo à ceux qui ont eu le courage
+de nous lire jusqu'au bout et recevez toutes nos félicitations pour utiliser
+\LaTeX\ plutôt qu'un quelconque traitement de texte. Pour terminer, vous aurez
+noté que les références n'ont rien à voir avec le sujet : c'était juste
+histoire d'en mettre. Bon travail !!!
+
+%
+% Bibliographie
+%
+
+
+\bibliography{biblio}
+
+\end{document}
+

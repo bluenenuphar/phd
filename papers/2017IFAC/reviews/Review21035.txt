@@ -1,0 +1,16 @@
+Reviewer 3 of IFAC WC 2017 submission 2459
+
+Comments to the author
+======================
+
+This paper developed a Q-Learning algorithm for model-free
+autonomous soaring, the main contributions of the proposed
+approach are the parameter adjusting strategies,the
+originality of the paper is poor. 
+
+The simulation show the convergence of the algorithm and
+the overall behaviro of the glider, However, the method is
+not compared with other presented control method, or it has
+to be outlined what is the benefit of this method. The
+emphases are not clear. As presented, the paper is not
+acceptable for the conference.

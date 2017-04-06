@@ -1,0 +1,11 @@
+Ces fichiers sont une modification mineure de ceux réalisés par Jean Charlet et Fabien Torre pour les conférences de la plateforme AFIA, puis de Hervé Frezza-Buet, et probablement d'autres personnes ayant participé à l'organisation des JFPDA entre 2006 et 2015.
+
+Pour compiler le document :
+
+pdflatex nom-prenom.tex 
+bibtex nom-prenom
+pdflatex nom-prenom.tex 
+pdflatex nom-prenom.tex 
+
+Bonne rédaction,
+Damien, Humbert, Alain et Olivier
